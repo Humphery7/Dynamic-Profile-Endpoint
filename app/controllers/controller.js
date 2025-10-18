@@ -9,7 +9,7 @@ const getUsers = async (req,res, next)=>{
             "user": {
               "email": "humpheryufuoma@gmail.com",
               "name": "Otuoniyo Ufuoma-Oghene Humphery",
-              "stack": "Nodejs/Express"
+              "stack": "Node.js/Express"
             },
             "timestamp": new Date().toISOString(),
             "fact": catFactJson.fact
