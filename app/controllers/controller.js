@@ -1,8 +1,11 @@
 import fetchWithTimeout from "../utils/fetchWithTimeout.js";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const getUsers = async (req,res, next)=>{
     try{
-        const catFactJson = await fetchWithTimeout('https://catfact.ninja/fact');
+        const catFactJson = await fetchWithTimeout(process.env.CAT_API_URL);
 
         res.status(200).json({
             "status": "success",
